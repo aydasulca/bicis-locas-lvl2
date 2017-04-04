@@ -24,32 +24,37 @@
             <label for="name" class="sr-only">Nombre</label>
             <input type="text" id="name" class="form-control"
             placeholder="Ingrese su nombre">
+            <span id="spanNombre"></span>
           </div>
           <div class="lastname-container input-box">
             <label for="lastname" class="sr-only">Apellido</label>
             <input type="text" id="lastname" class="form-control"
             placeholder="Ingrese su apellido">
+            <span id="spanApellido"></span>
           </div>
           <div class="email-container input-box">
-            <label for="inputEmail" class="sr-only">
+            <label for="inputEmail" class="sr-only" class="form-control">
               Correo Electrónico
             </label>
             <input type="email" id="input-email" class="form-control" placeholder="Ingrese su correo electrónico" autofocus="">
+            <span id="spanEmail"></span>
           </div>
           <div class="form-group input-box">
             <label for="inputPassword" class="sr-only">
               Contraseña
             </label>
             <input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña">
+            <span id="spanPassword"></span>
           </div>
           <div class="form-group input-box">
             <select class="form-control">
-              <option value="0">Selecciona tu tipo de bici</option>
+              <option value="0" hidden>Selecciona tu tipo de bici</option>
               <option value="urbana">Urbana</option>
               <option value="treking">Treking</option>
               <option value="electrica">Eléctrica</option>
               <option value="estatica">Estática</option>
             </select>
+            <span id="spanGroup"></span>
           </div>
           <div class="input-group">
             <div class="input-group-addon">@</div>
@@ -58,12 +63,12 @@
           <div class="checkbox ">
             <label>
               <input type="checkbox" value="remember-me">
-              <span>Deseo recibir información vía email</span>
+              <span></span>
             </label>
           </div>
           <button class="btn btn-lg btn-primary btn-block submit-btn" type="submit">Registrar</button>
         </form>
-      </div>  
+      </div>
     </section>
     <!-- /container -->
     <script type='text/javascript' src='js/main.js'></script>
